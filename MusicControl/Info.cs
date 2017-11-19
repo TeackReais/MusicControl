@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace MusicControl
 {
-    public partial class Form1 : Form
+    public partial class Info : Form
     {
-        public Form1()
+        public Info()
         {
             InitializeComponent();
+            Cr.Text = Application.CompanyName;
+            Co.Text = Application.CompanyName;
+            Ve.Text = Application.ProductVersion;
         }
     }
 }

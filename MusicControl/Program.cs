@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace MusicControl
 {
@@ -16,7 +17,19 @@ namespace MusicControl
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MusicControl());
+        }
+        public static int outmusic(int number)
+        {
+            Random random = new Random();
+            int outmusic;
+            outmusic = random.Next(number);
+            return outmusic;
+        }
+        public static void StartFile(string path)
+        {
+            Process.Start(path);
+            return;
         }
     }
 }

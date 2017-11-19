@@ -46,14 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ChooseMusic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ChooseMusic.Designer.cs">
+      <DependentUpon>ChooseMusic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicAndNumber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicAndNumber.Designer.cs">
+      <DependentUpon>MusicAndNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicControl.Designer.cs">
+      <DependentUpon>MusicControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.Designer.cs">
+      <DependentUpon>Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChooseMusic.resx">
+      <DependentUpon>ChooseMusic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicAndNumber.resx">
+      <DependentUpon>MusicAndNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicControl.resx">
+      <DependentUpon>MusicControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
