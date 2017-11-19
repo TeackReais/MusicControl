@@ -33,7 +33,7 @@
             this.Title = new System.Windows.Forms.Label();
             this.MK = new System.Windows.Forms.Label();
             this.More = new System.Windows.Forms.Button();
-            this.Close = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             this.Confirm = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.MusicNumber)).BeginInit();
             this.SuspendLayout();
@@ -78,15 +78,15 @@
             this.More.UseVisualStyleBackColor = true;
             this.More.Click += new System.EventHandler(this.More_Click);
             // 
-            // Close
+            // Back
             // 
-            this.Close.Location = new System.Drawing.Point(259, 97);
-            this.Close.Name = "Close";
-            this.Close.Size = new System.Drawing.Size(75, 23);
-            this.Close.TabIndex = 17;
-            this.Close.Text = "Close";
-            this.Close.UseVisualStyleBackColor = true;
-            this.Close.Click += new System.EventHandler(this.Close_Click);
+            this.Back.Location = new System.Drawing.Point(259, 97);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(75, 23);
+            this.Back.TabIndex = 17;
+            this.Back.Text = "Back";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Close_Click);
             // 
             // Confirm
             // 
@@ -104,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(370, 145);
             this.Controls.Add(this.Confirm);
-            this.Controls.Add(this.Close);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.More);
             this.Controls.Add(this.MK);
             this.Controls.Add(this.Title);
@@ -124,7 +124,9 @@
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label MK;
         private System.Windows.Forms.Button More;
-        private System.Windows.Forms.Button Close;
+#pragma warning disable CS0108 // 成员隐藏继承的成员；缺少关键字 new
+        private System.Windows.Forms.Button Back;
+#pragma warning restore CS0108 // 成员隐藏继承的成员；缺少关键字 new
         private System.Windows.Forms.Button Confirm;
     }
 }

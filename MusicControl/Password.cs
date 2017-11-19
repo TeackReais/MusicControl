@@ -32,6 +32,8 @@ namespace MusicControl
             {
                 PasswordText.Clear();
                 new ChooseMusic().Show();
+                MusicControl musiccontrol = (MusicControl)this.Owner;
+                musiccontrol.Hide();
                 this.Close();
             }
             else

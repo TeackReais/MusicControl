@@ -176,7 +176,7 @@ namespace MusicControl
 
         private void Choose_Click(object sender, EventArgs e)
         {
-            new Password().Show();
+            new Password().Show(this);//this和owner函数的联系
         }
 
         private void AllMusic_CheckedChanged(object sender, EventArgs e)

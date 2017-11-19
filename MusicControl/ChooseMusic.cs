@@ -19,6 +19,8 @@ namespace MusicControl
 
         private void Close_Click(object sender, EventArgs e)
         {
+            MusicControl musiccontrol = (MusicControl)this.Owner;
+            musiccontrol.Show();
             this.Close();
             return;
         }

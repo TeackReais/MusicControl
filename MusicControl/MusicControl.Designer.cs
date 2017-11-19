@@ -175,7 +175,9 @@
         private System.Windows.Forms.CheckBox AllMusic;
         private System.Windows.Forms.CheckBox MainMusic;
         private System.Windows.Forms.CheckBox LeaveSchool;
+#pragma warning disable CS0108 // 成员隐藏继承的成员；缺少关键字 new
         public System.Windows.Forms.Button Close;
+#pragma warning restore CS0108 // 成员隐藏继承的成员；缺少关键字 new
         public System.Windows.Forms.Button Choose;
         public System.Windows.Forms.Button Info;
         public System.Windows.Forms.Button Next;
